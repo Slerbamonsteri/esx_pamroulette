@@ -1,9 +1,9 @@
 # esx_pamroulette
 
 Requirements:
-
-3dme or something else to replace 3dme-triggers
-Common sense
+---
+3dme, or something else to replace 3dme-triggers
+---
 
 
 
