@@ -53,15 +53,14 @@ function arvonta()
 
 	arvontakesken = true
 	local tulos = math.random(0,36)
-	
 	if lahella1[1] ~= nil then
 		for i=1, #lahella1, 1 do
 			TriggerClientEvent('esx:ruletti:tulos', lahella1[i].pelaaja, tulos)
         end
 	end
-	
+
 	SetTimeout(12000, function()
-	
+
 		if osallistuneet[1] ~= nil then
 			for i=1, #osallistuneet, 1 do
 				if osallistuneet[i].osallistujanvari == tulos or osallistuneet[i].osallistujanvari == 'V' and tulos == 0 then
@@ -84,9 +83,7 @@ function arvonta()
 		lahella2 = {}
 		osallistuneet = {}
 		arvontakesken = false
-		
 		SetTimeout(30000, arvonta)
-	
 	end)
 
 end
